@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System - Real-time Analytics</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Management System</h1>
+      <h2>Add Student</h2>
+      <input type="text" id="student-name" placeholder="Enter student name" />
+      <input
+        type="number"
+        id="student-grade"
+        placeholder="Enter student grade"
+      />
+      <button onclick="addStudent()">Add Student</button>
+      <h2>Students</h2>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="student-data"></tbody>
+      </table>
+      <h2>Range Sum Query</h2>
+      <div style="display: flex; justify-content: space-between">
+        <div style="flex: 1">
+          <input
+            type="number"
+            id="start-index"
+            min="0"
+            placeholder="Start Index"
+          />
+        </div>
+        <div style="flex: 1">
+          <input type="number" id="end-index" min="0" placeholder="End Index" />
+        </div>
+      </div>
+      <button onclick="queryRangeSum()">Get Range Sum</button>
+      <p id="range-sum-result"></p>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
